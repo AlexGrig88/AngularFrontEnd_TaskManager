@@ -120,7 +120,7 @@ export class HeaderComponent implements OnInit {
 
   // начать работу intro
   showIntroHelp(): void {
-    this.introService.startIntroJS();
+    //this.introService.startIntroJS();
   }
 
 }

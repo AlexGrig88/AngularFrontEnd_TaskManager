@@ -13,11 +13,7 @@ import {MatDialog} from '@angular/material/dialog';
 // подвал - нижняя часть страницы
 export class FooterComponent implements OnInit {
     year: Date;
-    site = 'https://javabegin.ru/';
-    course = 'http://101112.ru/ang-spring-auth';
-
-    blog = 'https://javabegin.ru/blog/tag/angular/';
-    siteName = 'JavaBegin';
+    siteName = 'AlexGrigCorp';
 
 
     constructor(private dialog: MatDialog) {
@@ -35,7 +31,8 @@ export class FooterComponent implements OnInit {
                 autoFocus: false,
                 data: {
                     dialogTitle: 'О программе',
-                    message: 'Данное приложение было создано для видеокурса "Angular+Java/SprigBoot/Hibernate" на сайте javabegin.ru'
+                    message: 'Данное приложение создавалось в рамках изучения фреймоврка Spring(Java). Angular - в качестве ' +
+                      'ознакомительного курса и понимание основных концептов.'
                 },
                 width: '400px'
             });

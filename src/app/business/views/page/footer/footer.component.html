@@ -5,21 +5,10 @@
     <nav class="float-left">
             <ul>
                 <li>
-                    <a [href]="site">
-                        {{'COMMON.OUR-SITE' | translate }}
-                    </a>
-                </li>
-                <li>
                     <a (click)="openAboutDialog()" class="link">
                         {{'COMMON.ABOUT' | translate }}
                     </a>
                 </li>
-                <li>
-                    <a [href]="blog">
-                        {{'COMMON.BLOG' | translate }}
-                    </a>
-                </li>
-
             </ul>
 
         </nav>
@@ -28,9 +17,9 @@
 
 
         <div class="copyright float-right">
-            <a class="link" style="color: #0b75c9" [href]="course" target="_blank">{{ 'COMMON.PROJECT-DESC' | translate}}&nbsp;</a>
+            <p>{{ 'COMMON.PROJECT-DESC' | translate}}&nbsp;</p>
             © {{year | date: 'yyyy'}} <i class="material-icons">favorite</i>
-            <a [href]="site" target="_blank">{{siteName}}</a>
+            <a>{{siteName}}</a>
         </div>
 
 
